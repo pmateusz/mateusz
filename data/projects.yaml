@@ -1,0 +1,197 @@
+- name: Genie AI
+  role: Director of Software Engineering (formal), Founding Software Engineer
+  time:
+    begin: 2023-06-13
+  company: Kindly Inc.
+  location: Remote
+  description: |
+    GenieAI is a portfolio management system for institutional investors investing in Cryptocurrency. GenieAI tracks digital assets spread across centralized exchanges and prime brokers. Besides data collection, GenieAI analyses current holdings to compute financial metrics. Investors could use AI and Mathematical Optimization tools built into the platform to guide future investment decisions.
+
+    Genie AI is a cloud-native application deployed in Kubernetes in AWS. The system is composed of a few multi-services glued together using GraphQL federation. Python is the primary language at the backend.
+  tasks:
+    - implementing core features on the backend site,
+    - scaffolding the project,
+    - setting up AWS infrastructure (i.e., Kubernetes clusters),
+    - building CI pipelines, establishing the release process,
+    - managing the dev team, conducting regular 1:1,
+    - interviewing candidates for SE positions,
+    - supporting the CTO in feature planning and technical decisions.
+  technology:
+    - Python
+    - FastAPI
+    - Pydantic
+    - SQLAlchemy
+    - Click
+    - Strawberry GraphQL
+    - Prefect
+    - Pytest
+    - Postgres
+    - Apollo GraphQL
+    - Terraform
+    - Kubernetes
+    - Docker
+    - Helm
+    - ArgoCD
+    - AWS
+    - Grafana
+    - Sentry
+    - GitHub Actions
+    - HashiCorp Vault
+
+- name: Content Management System for Legal Matters
+  role: Senior Software Engineer
+  time:
+    begin: 2020-10-15
+    end: 2022-04-01
+  company: Appliscale for a customer in Germany
+  location: Kraków, Poland
+  description: |
+    The customer appointed the software house I worked for to build a content management system for processing legal matters using a modern tech stack. The system allowed legal departments to introduce a formal process for handling matters, distribute the workload across multiple legal professionals, track matter completion in the pipeline, share documents with external partners, etc.
+    
+    The system was a multi-tenant cloud-native application built in Java and deployed in Kubernetes in Azure.
+  tasks:
+    - scoping, designing, implementing, and testing customer-facing features,
+    - leading a feature team,
+    - onboarding new customers,
+    - managing a self-hosted Keycloak deployment.
+  technology:
+    - Java 17
+    - Spring
+    - Java Persistence API
+    - Python
+    - Postgres
+    - ElasticSearch
+    - Keycloak
+    - Kubernetes
+    - Azure
+    - Ansible
+    - Terraform
+
+- name: Meatie
+  description: |
+     Meatie is a side project I developed inspired by challenges with technical debt in REST API integrations. Suppose the project contains over a dozen REST integrations developed over time by different developers. Their solutions will diverge in the coding style, the choice of the HTTP client, and the feature set. Some features become effectively duplicated because their counterparts from other implementations are not readily available for reuse. Meatie solves these problems by generating code for calling REST APIs from method signatures annotated with type hints. With little configuration effort, Meatie offers rate limiting, retries, and caching. As of this writing, the weekly number of package downloads oscillates between 100-200.
+  technology:
+   - Python
+   - HTTP
+
+- name: Home Care Routing and Scheduling
+  role: Software Developer / Research Assistant
+  time:
+    begin: 2017-10-01
+    end: 2018-04-01
+  company: The Data Lab, University of Strathclyde, Glasgow City Council
+  location: Glasgow, United Kingdom
+  description: |
+    A six-month project aimed to demonstrate the scheduling and routing problems solved by human planners for the Glasgow Home Care Unit could be optimized using existing technology. The secondary objective was to estimate savings available through schedule and routing optimization.
+    
+    The problem instances solved were the largest reported in the academic literature, and the schedules found during optimization significantly outperformed human planners. I described the solution methodology and results in an article published in the Journal of Operations Research Society.
+  tasks:
+    - requirements analysis, design, implementation, and pilot deployment,
+    - building a suite of sample optimization problems using historical data obtained from the Glasgow Home Care Unit,
+    - developing a Constraint Programming (CP) model for routing and scheduling of home care visits,
+    - solving the CP model using Google Operations Research tools.
+  technology:
+    - Constraint Programming
+    - Time Series Analysis
+    - C++ 11
+    - STL
+    - Boost
+    - CMake
+    - Google Optimisation Tools
+    - Open Source Routing Machine
+    - Python
+    - Pandas
+    - matplotlib
+    - Travis CI
+
+- name: Turbo.net
+  role: Software Developer
+  company: Code Systems
+  location: Remote
+  time:
+    begin: 2015-05-01
+    end: 2016-10-01
+  description: |
+    Turbo.net is a system for building, distributing, and installing containerized applications for Windows.
+
+    In its primetime, Turbo.net competed with Docker to become the leading container technology for Windows. The company has solved many challenging technical problems for which they secured patents, i.e., to run a container with a click of a button in the web browser and to start a partially downloaded container image while the download is still in progress.
+  tasks:
+    - implementing new features and fixing bugs in the command-line client, a desktop application, the server backend, and the language for defining application images,
+    - building an automated pipeline for creating application images,
+    - developing open-source plugins for integrating the platform with Jenkins, Vagrant, and web browsers (i.e., Firefox, Chrome, Internet Explorer),
+    - writing technical articles for the company blog,
+    - interviewing candidates for SE roles.
+  technology:
+    - C#
+    - NUnit
+    - Scala
+    - ScalaCheck
+    - Lift
+    - PowerShell
+    - C++
+    - JavaScript
+    - Vagrant
+    - Jenkins
+
+- name: Microsoft Office
+  role: Software Engineer in Test
+  company: Microsoft
+  location: European Developer Centre, Dublin, Ireland
+  time:
+    begin: 2014-03-01
+    end: 2015-05-01
+  description: |
+    Tools and Automation team, the team I joined, developed internal tools and software libraries for writing automated tests for Microsoft Office desktop applications. The team also maintained a collection of a few thousand E2E tests focused on localization and features shipped for international markets for all flagship desktop applications from the Office suite.
+  tasks:
+    - supervising a team of six remote software engineers responsible for running and fixing E2E tests,
+    - solving technical problems escalated by the team,
+    - implementing support for new UI components in the testing framework,
+    - managing an intern,
+    - interviewing intern candidates.
+  technology:
+    - C#
+    - Windows Automation API
+    - PowerShell
+    - Microsoft SQL Server
+  
+- name: Software Interlock System
+  role: Junior Software Developer
+  company: European Organization for Nuclear Research (CERN)
+  location: Geneva, Switzerland
+  time:
+    begin: 2013-03-01
+    end: 2014-03-01
+  description:
+    Software Interlock System is an alerting and monitoring system for hardware devices installed in the particle accelerators at CERN. The SIS deployment consists of a set of rules specified by accelerator operators. A rule definition contains a logical expression, i.e., a condition on a value of a mathematical formula built using metrics collected from the accelerators. If a condition is satisfied, the rule can execute an action, for instance, to trigger an alarm or to remove a beam from the accelerator.
+  tasks:  
+    - designing and implementing an internal Groovy Domain Specific Language (DSL) for SIS configuration. The feature extended the expressiveness of rules operators could define and reduced the framework boilerplate compared to XML-based configurations. My team presented the DSL at the 14th International Conference on Accelerator and Large Experimental Control Systems.
+    - configuring an SIS deployment for a new particle accelerator (LINAC 4).
+  technology:
+    - Java 6
+    - Spring Core
+    - RMI
+    - JUnit
+    - Groovy
+
+- name: TeleDICOM
+  role: Junior Software Developer
+  time:
+    begin: 2011-06-01
+    end: 2013-02-01
+  company: AGH University of Science and Technology
+  location: Kraków, Poland
+  description: |
+    TeleDICOM is a platform for scheduling and performing remote consultations between healthcare professionals. Participants of the video conference could share, review, and work together on medical documents in the DICOM format.
+    
+    TeleDICOM was implemented in .NET using the Service Oriented Architecture paradigm. System components were deployed as Windows services, and users accessed the platform via a desktop application.
+  tasks:
+    - implementing a service for removing information that could identify patients from images, videos, and metadata saved in the DICOM format,
+    - developing a module for managing remote consultations in the client application.
+  technology:
+    - C#
+    - DICOM
+    - Windows Presentation Foundation
+    - Windows Communication Foundation
+    - NHibernate
+    - Leadtools Medical Imaging
+    - Microsoft SQL Server

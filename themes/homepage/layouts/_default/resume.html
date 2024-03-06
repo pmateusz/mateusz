@@ -1,0 +1,165 @@
+{{ define "main" }}
+{{ $resume := $.Site.Data.resume }}
+<article id="resume">
+    <h2>Resume</h2>
+    {{ with $resume.skills }}
+    <section id="skills">
+        <h3>Skills</h3>
+        <dl>
+            {{ range . }}
+            <div>
+                <dt> {{ .group }} </dt>
+                <div class="keywords">
+                    {{ range .elements }}
+                    <dd class="keyword">{{ . }}</dd>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+        </dl>
+    </section>
+    {{ end }}
+    {{ with $resume.employment }}
+    <section id="employment-history">
+        <h3>Employment History</h3>
+        <dl>
+            {{ range . }}
+            <div>
+                <dt>{{ .role }}</dt>
+                <dd>{{ .project }}</dd>
+                <dd>
+                    <address>{{ .company }}, {{ .location }}</address>
+                </dd>
+            </div>
+            {{ with .timeFrame }}
+            <dd class="time-interval">
+                {{ $dateFormat := "Jan 2006" }}
+                {{ $begin := time.AsTime .begin }}
+                {{ $beginText := $begin.Format $dateFormat }}
+                {{ $endText := "Now" }}
+                {{ if .end }}
+                {{ $end := time.AsTime .end }}
+                {{ $endText = $end.Format $dateFormat }}
+                {{ end }}
+                <span>{{ $beginText }} - {{ $endText }}</span>   
+            </dd>
+            {{ end }}
+            {{ end }}
+        </dl>
+    </section>
+    {{ end }}
+    {{ with $resume.education }}
+    <section id="education">
+        <h3>Education</h3>
+        <dl>
+        {{ range . }}
+            <div>
+                <dt> {{ .degree }} </dt>
+                {{ with .course }}
+                <dd> {{ . }} </dd>
+                {{ end }}
+                <dd>
+                    <address> {{ .university}}, {{ .location }}</address>
+                </dd>
+            </div>
+            {{ with .timeFrame }}
+            <dd class="time-interval">
+                {{ $dateFormat := "Jan 2006" }}
+                {{ $begin := time.AsTime .begin }}
+                {{ $beginText := $begin.Format $dateFormat }}
+                {{ $endText := "Now" }}
+                {{ if .end }}
+                {{ $end := time.AsTime .end }}
+                {{ $endText = $end.Format $dateFormat }}
+                {{ end }}
+                <span>{{ $beginText }} - {{ $endText }}</span>    
+            </dd>
+            {{ end }}
+        {{ end }}
+        </dl>
+    </section>
+    {{ end }}
+    {{ with $resume.languages }}
+    <section id="languages">
+        <h3>Languages</h3>
+        <dl>
+            {{ range . }}
+            <dt> {{ .language }} </dt>
+            <dd> {{ .level }} </dd>
+            {{ end }}
+        </dl>
+    </section>
+    {{ end }}
+    {{ with $resume.achievements }}
+    {{ $conferences := where . "conference" "ne" nil }}
+    {{ $articles := where . "article" "ne" nil }}
+    {{ $certificates := where . "certificate" "ne" nil }}
+    {{ if or $conferences $articles $certificates }}
+    <section id="achievements">
+        <h3>Achievements</h3>
+        {{ with $certificates }}
+        <h4>Certifications</h4>
+        <dl>
+            {{ range . }}
+            <div>
+                <dt> {{ .certificate }} </dt>
+                <dd>Certificate ID: {{ .id }} </dd>
+            </div>
+            <dd class="year">
+                {{ $time := time.AsTime .time }}
+                {{ $time.Format "2006" }}
+            </dd>
+            {{ end }}
+        </dl>
+        {{ end }}
+        {{ with $articles }}
+        <h4>Academic Papers</h4>
+        <dl>
+            {{ range . }}
+            <div>
+                <dt>
+                    {{ if .link }}
+                    <a href={{ .link }}> {{ .article }} </a>
+                    {{ else }}
+                        {{ .article }}
+                    {{ end }}
+                </dt>
+                <dd>
+                    <address>{{ .journal }}</address>
+                </dd>
+            </div>
+            <dd class="year">
+                {{ $time := time.AsTime .time }}
+                {{ $time.Format "2006" }}
+            </dd>
+            {{ end }}
+        </dl>
+        {{ end }}
+        {{ with $conferences }}
+        <h4>Conference Presentations</h4>
+        <dl>
+            {{ range . }}
+            <div>
+                <dt>
+                    {{ if .link }}
+                    <a href={{ .link }}> {{ .presentation }} </a>
+                    {{ else }}
+                        {{ .presentation }}
+                    {{ end }}
+                </dt>
+                <dd>
+                    <address>{{ .conference }}, {{ .location }}</address>
+                </dd>
+            </div>
+            <dd class="year">
+                {{ $time := time.AsTime .time }}
+                {{ $time.Format "2006" }}
+            </dd>
+            {{ end }}
+        </dl>
+        {{ end }}
+    </section>
+    {{ end }}
+    {{ end }}
+</article>
+{{ end }}

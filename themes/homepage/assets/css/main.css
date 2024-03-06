@@ -1,0 +1,704 @@
+/* @font-face {
+  font-family: "Arvo";
+  src:
+    url("/fonts/Arvo-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Arvo";
+  src:
+    url("/fonts/Arvo-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Arvo";
+  src:
+    url("/fonts/Arvo-Italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Arvo";
+  src:
+    url("/fonts/Arvo-BoldItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Lato";
+  src:
+    url("/fonts/Lato-Regular.ttf") format("truetype"),
+    url("/fonts/Lato-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src:
+    url("/fonts/Lato-Italic.ttf") format("truetype"),
+    url("/fonts/Lato-Italic.woff2") format("woff2");
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src:
+    url("/fonts/Lato-Bold.ttf") format("truetype"),
+    url("/fonts/Lato-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Lato";
+  src:
+    url("/fonts/Lato-BoldItalic.ttf") format("truetype"),
+    url("/fonts/Lato-BoldItalic.woff2") format("woff2");
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Lato";
+  src:
+    url("/fonts/Lato-Light.ttf") format("truetype"),
+    url("/fonts/Lato-Light.woff2") format("woff2");
+  font-style: normal;
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "Lato";
+  src:
+    url("/fonts/Lato-LightItalic.ttf") format("truetype"),
+    url("/fonts/Lato-LightItalic.woff2") format("woff2");
+  font-style: italic;
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src:
+    url("/fonts/Merriweather-Regular.ttf") format("truetype"),
+    url("/fonts/Merriweather-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src:
+    url("/fonts/Merriweather-Italic.ttf") format("truetype"),
+    url("/fonts/Merriweather-Italic.woff2") format("woff2");
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src:
+    url("/fonts/Merriweather-Bold.ttf") format("truetype"),
+    url("/fonts/Merriweather-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src:
+    url("/fonts/Merriweather-BoldItalic.ttf") format("truetype"),
+    url("/fonts/Merriweather-BoldItalic.woff2") format("woff2");
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src:
+    url("/fonts/Merriweather-Light.ttf") format("truetype"),
+    url("/fonts/Merriweather-Light.woff2") format("woff2");
+  font-style: normal;
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src:
+    url("/fonts/Merriweather-LightItalic.ttf") format("truetype"),
+    url("/fonts/Merriweather-LightItalic.woff2") format("woff2");
+  font-style: italic;
+  font-weight: lighter;
+} */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Thin.ttf") format("truetype");
+  font-weight: 100;
+}
+
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("/fonts/OpenSans-Thin.ttf") format("truetype");
+  font-weight: 100;
+}
+
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("/fonts/OpenSans-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("/fonts/OpenSans-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("/fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("/fonts/OpenSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("/fonts/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("/fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("/fonts/OpenSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("/fonts/OpenSans-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+
+:root {
+  --color-ink: #0D0D0D;
+  --color-baseline: #F8F8F8;
+  --color-baseline-alpha: #F8F8F880;
+  --color-underline: #BF368F;
+  --color-underline-light:  #A239BF;
+  --color-prime: #23518C;
+  --color-prime-light: #2493BF;
+  --color-highlight: #E5E4EB;
+
+  --font-regular: OpenSans;
+  --font-headline: Montserrat;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  color: var(--color-ink);
+  background-color: var(--color-baseline);
+  font-family: var(--font-regular);
+  font-size: 1rem;
+  line-height: 1.5;
+
+  min-height: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+h1,h2,h3,h4 {
+  font-family: var(--font-headline);
+}
+
+nav {
+  padding: 1rem;
+  font-family: var(--font-headline);
+}
+
+nav h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 2em;
+}
+
+nav ul li:first-child {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+nav a {
+  color: var(--color-ink);
+  display: block;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+nav a:hover {
+  color: var(--color-prime-light);
+}
+
+main {
+  max-width: 1000px;
+  margin: 2rem auto 4rem auto;
+  padding: 0 1rem;
+}
+
+footer {
+  padding: 1rem;
+  background-color: var(--color-underline);
+  grid-row: 3/4;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+footer a {
+  display: block;
+  line-height: 0;
+}
+
+footer .icon {
+  border: 1px solid var(--color-ink);
+}
+
+footer .icon:hover {
+  background-color: var(--color-baseline-alpha);
+}
+
+footer svg {
+  width: 36px;
+  height: auto;
+  padding: 5px;
+  fill:  var(--color-ink);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-prime);
+}
+
+a:hover {
+  color: var(--color-prime-light)
+}
+
+#intro {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+#intro p {
+  font-size: 1.2rem;
+}
+
+#intro h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+#intro .highlight {
+  background-color: var(--color-prime-light);
+  padding: 0.05em 0.1em;
+}
+
+#about {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+#about .featured-image {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: baseline;
+}
+
+#about img {
+  max-width: 250px;
+}
+
+#about p {
+  margin-top: 0;
+}
+
+#about h2 {
+  margin: 0;
+}
+
+#resume {
+  display: grid;
+  gap: 2rem;
+}
+
+#resume .label {
+  padding: 5px;
+}
+
+#resume h2,h3,h4 {
+  margin: 0;
+}
+
+#resume h4 {
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+#resume #skills {
+  order: 2;
+}
+
+#resume #achievements {
+  order: 3;
+}
+
+#resume #achievements h4 {
+  margin-top: 1rem;
+}
+
+#resume #achievements dl {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5rem;
+}
+
+#resume #skills ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#resume #skills dl {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+#resume #skills dt {
+  font-family: var(--font-headline);
+  text-transform: uppercase;
+  flex-basis: 100%;
+}
+
+#resume .time-interval {
+  font-family: var(--font-headline);
+}
+
+#resume .year {
+  font-family: var(--font-headline);
+}
+
+.keywords {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+
+.keyword {
+  padding: 5px;
+  background-color: var(--color-highlight);
+}
+
+#resume #education dl {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+}
+
+#resume #education dt {
+  font-family: var(--font-headline);
+}
+
+#resume #languages dl {
+  display: grid;
+  grid-template-columns: auto 20px 1fr;
+}
+
+#resume #languages dt {
+  grid-column: 1/2;
+  padding-right: 2rem;
+}
+
+#resume #languages dd {
+  grid-column: 3/4;
+}
+
+#resume #employment-history dl {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  line-height: 1.5;
+  gap: 1rem;
+}
+
+#resume #employment-history dt {
+  font-family: var(--font-headline);
+}
+
+#portfolio {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+}
+
+#portfolio .project-headline h2 {
+  border-top: 5px solid var(--color-prime);
+  padding-top: 5px;
+  margin-bottom: 0;
+}
+
+#portfolio article.project {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+}
+
+#portfolio h4 {
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+#portfolio #role {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+}
+
+#portfolio #time-frame {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+}
+
+#portfolio #role h4 {
+  display: inline;
+}
+
+#portfolio #time-frame h4 {
+  display: inline;
+}
+
+#portfolio .project-subtitle {
+  display: flex;
+  flex-flow: row;
+  justify-content: start;
+  gap: 0.5rem;
+}
+
+#portfolio article ul {
+  list-style-type: '- ';
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+  margin-left: 2rem;
+}
+
+#portfolio article #technology ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.separator {
+  border-right: 1px solid var(--color-ink);
+  margin: 2px 0;
+}
+
+.projects {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.line-separator {
+  border: 5px solid var(--color-prime);
+  margin: 2rem 0;
+}
+
+@media (min-width: 800px) {
+  #intro h2 {
+    font-size: 4rem;
+  }
+
+  nav {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  nav ul li:first-child {
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
+
+  #about {
+    grid-template-columns: auto 1fr;
+  }
+
+  #about h2 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  #about .featured-image {
+    grid-column: 1/2;
+  }
+
+  #resume {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  #resume #skills {
+    grid-column: 1/2;
+    grid-row: 2/5;
+  }
+
+  #resume #employment-history {
+    grid-row: 2/3;
+  }
+
+  #resume #education {
+    grid-row: 3/4;
+  }
+
+  #resume #languages {
+    grid-row: 4/5;
+  }
+
+  #resume #achievements {
+    grid-column: 2/3;
+    grid-row: 5/6;
+  }
+}
