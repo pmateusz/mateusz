@@ -1,0 +1,7 @@
+baseURL = 'https://pmateusz.github.io/'
+languageCode = 'en-us'
+title = "Mateusz Polnik's Homepage"
+theme = 'homepage'
+
+[params]
+contactFormId = 'e5a7b79b73bf51a651ea5dffe90922d8'
