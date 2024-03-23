@@ -47,7 +47,7 @@
   location: Kraków, Poland
   description: |
     The customer appointed the software house I worked for to build a content management system for processing legal matters using a modern tech stack. The system allowed legal departments to introduce a formal process for handling matters, distribute the workload across multiple legal professionals, track matter completion in the pipeline, share documents with external partners, etc.
-    
+
     The system was a multi-tenant cloud-native application built in Java and deployed in Kubernetes in Azure.
   tasks:
     - scoping, designing, implementing, and testing customer-facing features,
@@ -83,7 +83,7 @@
   location: Glasgow, United Kingdom
   description: |
     A six-month project aimed to demonstrate the scheduling and routing problems solved by human planners for the Glasgow Home Care Unit could be optimized using existing technology. The secondary objective was to estimate savings available through schedule and routing optimization.
-    
+
     The problem instances solved were the largest reported in the academic literature, and the schedules found during optimization significantly outperformed human planners. I described the solution methodology and results in an article published in the Journal of Operations Research Society.
   tasks:
     - requirements analysis, design, implementation, and pilot deployment,
@@ -153,7 +153,7 @@
     - Windows Automation API
     - PowerShell
     - Microsoft SQL Server
-  
+
 - name: Software Interlock System
   role: Junior Software Developer
   company: European Organization for Nuclear Research (CERN)
@@ -163,7 +163,7 @@
     end: 2014-03-01
   description:
     Software Interlock System is an alerting and monitoring system for hardware devices installed in the particle accelerators at CERN. The SIS deployment consists of a set of rules specified by accelerator operators. A rule definition contains a logical expression, i.e., a condition on a value of a mathematical formula built using metrics collected from the accelerators. If a condition is satisfied, the rule can execute an action, for instance, to trigger an alarm or to remove a beam from the accelerator.
-  tasks:  
+  tasks:
     - designing and implementing an internal Groovy Domain Specific Language (DSL) for SIS configuration. The feature extended the expressiveness of rules operators could define and reduced the framework boilerplate compared to XML-based configurations. My team presented the DSL at the 14th International Conference on Accelerator and Large Experimental Control Systems.
     - configuring an SIS deployment for a new particle accelerator (LINAC 4).
   technology:
@@ -182,7 +182,7 @@
   location: Kraków, Poland
   description: |
     TeleDICOM is a platform for scheduling and performing remote consultations between healthcare professionals. Participants of the video conference could share, review, and work together on medical documents in the DICOM format.
-    
+
     TeleDICOM was implemented in .NET using the Service Oriented Architecture paradigm. System components were deployed as Windows services, and users accessed the platform via a desktop application.
   tasks:
     - implementing a service for removing information that could identify patients from images, videos, and metadata saved in the DICOM format,
